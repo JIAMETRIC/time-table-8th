@@ -14,8 +14,12 @@
   <style>
     :root {
       --primary: #2596be;
-      --secondary: #1e293b;
-      --bg: #f1f5f9;
+      --secondaryColor: #5bc1da;
+      --tertiaryColor: #2596be;
+
+      --fontHeading: 'Playfair Display', serif;
+      --fontBody: 'Inter', sans-serif;
+      --fontTamil: 'Noto Sans Tamil', sans-serif;
       --card-bg: #ffffff;
       --border: #e2e8f0;
       --header-bg: #f8fafc;
@@ -28,7 +32,7 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--fontBody);
       background: var(--bg);
       padding: 15px;
       margin: 0;
@@ -194,7 +198,11 @@
     }
 
     .tamil-text {
-      font-family: 'Noto Sans Tamil', sans-serif;
+      font-family: var(--fontTamil);
+    }
+
+    .tamil-name {
+      font-family: var(--fontTamil);
     }
 
     /* --- MOBILE RESPONSIVE STYLES --- */

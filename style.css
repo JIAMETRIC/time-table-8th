@@ -234,7 +234,6 @@ header.top-header .constituency-name {
 }
 
 header.top-header .tamil-name {
-    font-family: 'Hind Madurai', sans-serif;
     font-family: var(--fontTamil);
     font-size: 2rem;
     color: var(--tertiaryColor);
