@@ -103,14 +103,25 @@
         }
 
         .table-header {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1.5fr;
-            padding: 0 15px;
+            display: flex;
+            padding: 0;
+            margin-bottom: 5px;
             font-size: 11px;
             font-weight: 800;
             text-transform: uppercase;
             color: var(--text-muted);
             letter-spacing: 1.5px;
+        }
+
+        .table-header span:first-child {
+            width: 110px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .table-header span:last-child {
+            flex-grow: 1;
+            text-align: center;
         }
 
         .time-row {
@@ -123,6 +134,7 @@
             overflow: hidden;
             margin-bottom: 12px;
             align-items: stretch;
+            flex: 1;
         }
 
         .date-block {
@@ -254,6 +266,11 @@
 
             .time-row {
                 margin-bottom: 4px;
+                flex: 1;
+            }
+
+            .table-header span:first-child {
+                width: 80px;
             }
 
             .date-block {
@@ -312,8 +329,7 @@
             <!-- Labels -->
             <div class="table-header">
                 <span>Timeline</span>
-                <span></span>
-                <span style="text-align: center; flex-grow: 1;">Subject & Syllabus</span>
+                <span>Subject & Syllabus</span>
             </div>
 
             <!-- Row 1 -->
