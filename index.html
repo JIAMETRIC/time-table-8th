@@ -134,7 +134,8 @@
             overflow: hidden;
             margin-bottom: 12px;
             align-items: stretch;
-            flex: 1;
+            height: 90px; /* Hardcoded Height */
+            flex-shrink: 0;
         }
 
         .date-block {
@@ -144,7 +145,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 110px;
+            width: 110px; /* Hardcoded Width */
             gap: 4px;
             flex-shrink: 0;
         }
@@ -265,17 +266,17 @@
             }
 
             .time-row {
-                margin-bottom: 4px;
-                flex: 1;
+                margin-bottom: 6px;
+                height: 75px; /* Hardcoded Height for Mobile */
             }
 
             .table-header span:first-child {
-                width: 80px;
+                width: 85px;
             }
 
             .date-block {
                 padding: 6px;
-                width: 80px;
+                width: 85px; /* Hardcoded Width for Mobile */
             }
 
             .day-label {
